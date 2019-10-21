@@ -1,0 +1,41 @@
+.button {
+    position: fixed;
+    right: 390px;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 80px;
+    z-index: 100;
+   }
+
+   .button_mobile {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(141, 140, 140, 0.514);
+    color: #000000;
+    border: 1px solid rgba(201, 201, 201, 0.801);
+    outline: none;
+    cursor: pointer;
+   }
+
+   .button_mobile:hover {
+       color: azure;
+       border: 1px solid azure;
+   }
+
+   .button_back-desktop {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(141, 140, 140, 0.514);
+    color: #000000;
+    border: 1px solid rgba(201, 201, 201, 0.801);
+    outline: none;
+    cursor: pointer;
+   }
+
+    .button_back-desktop:hover {
+       color: azure;
+       border: 1px solid azure;
+   }
+

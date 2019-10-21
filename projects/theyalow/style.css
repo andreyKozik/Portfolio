@@ -1,0 +1,1472 @@
+
+@font-face { 
+  font-family: 'Lucida Sans'; 
+  src: url('assets/fonts/LucidaSans-Italic.ttf')  format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Segoe WP'; 
+  src: url('assets/fonts/SegoeWP.ttf')  format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Asap-Regular'; 
+  src: url('assets/fonts/Asap-Regular.ttf') format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'SegoeUI-Light'; 
+  src: url('assets/fonts/SegoeUI-Light.ttf') format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'PTSans-Regular'; 
+  src: url('assets/fonts/ptsans/PTSans-Regular.ttf') format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'SegoeWP-Light'; 
+  src: url('assets/fonts/SegoeWP-Light.ttf') format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'PTSans-NarrowBold'; 
+  src: url('assets/fonts/ptsans/PTSans-NarrowBold.ttf') format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Opensans'; 
+  src: url('assets/fonts/open-sans/opensans.ttf') format('opensans');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'SegoeUI'; 
+  src: url('assets/fonts/SegoeUI.ttf') format('SegoeUI');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* делаем верхнюю часть сайта */
+.header {
+    background-image: url(assets/img/banner.jpg);
+    width: 100%;
+    height: 566px;
+    background-size: cover; 
+}
+
+.header header {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+/* позиционируем логотип */
+.logo {
+    width: 320px;
+    height: 150px;
+    display: flex;
+}
+
+.logo .logo_1 {
+    padding-top: 30px;
+    padding-left: 4px;
+    width: 79px;
+    height: 79px;
+}
+
+.logo .logo_2 {
+    position: absolute;
+    padding-top: 28px;
+    padding-left: 2px;
+    width: 83px;
+    height: 83px;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 258%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 7px;
+    padding-top: 51px;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+/* позиционируем панель навигации */
+.nav {
+    height: 51px;
+    padding-top: 71px;
+    padding-left: 249px;
+}
+
+.header table {
+    width: 453px;
+    height: 41px;
+    background-color: #f5c506;
+    box-shadow: -4px -5px rgba(245, 197, 5, .27),
+                -8px -8px 0px rgba(245, 197, 5, .27); 
+    border-color:rgba(185, 143, 3, .40);                          
+}
+ .header a { 
+    text-decoration: none;
+    color: #b99403; 
+   }
+
+.about_us {
+    width: 172px;
+}
+
+.services {
+     width: 133px;
+}
+
+.nav span { 
+     font-size: 17px;
+    color: #9b7d08;
+    font-family: "Segoe WP", "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+   }
+
+.nav td.about_us span {
+    position: absolute;
+    letter-spacing: 0.2px;
+    margin-left: 69px;
+    margin-top: -11px;
+}
+
+.nav td.services span {
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-left: 41px;
+    margin-top: -11px;
+}
+
+.nav td.contact span {
+    position: absolute;
+    letter-spacing: 0.2px;
+    margin-left: 48px;
+    margin-top: -11px;
+}
+
+.nav td.about_us img {
+    position: absolute;
+    margin-left: 38px;
+    margin-top: -10px;
+}
+
+.nav td.services img {
+    position: absolute;
+    margin-left: 13px;
+    margin-top: -10px;
+}
+
+.nav td.contact img {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+  
+
+/* вставляем видео */
+.header .main  {
+    width: 1024px;
+    margin: 0 auto;
+    
+} 
+
+.header .main div .preview {
+    position: absolute;
+    margin-left: -138px;
+    margin-top: 18px;
+}
+
+.video_poster video {
+    position: absolute;
+    margin-left: 13px;
+    margin-top: 18px;
+    width:549px;
+    height:327px;
+}
+
+/* вставляем кнопки слайдера */
+.header div.controls {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header  a.left {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    opacity: 0.71;
+    margin-top: 150px;   
+}
+
+.header a.left img {
+     opacity: .99; 
+     color: #ffffff; 
+}
+
+.header  a.right {
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 57px;
+    background-color: #f5c506;
+    margin-top: 150px;  
+} 
+/* вставляем название к видео */
+.header .main .name_video {
+    width: 405px;
+    height: 121px;
+    position: absolute;
+    margin-left: 598px;
+    margin-top: 89px;
+}
+
+
+.header .main .name_video span.top_name {
+    display: block;
+    font-size: 63px;
+    color: #f5c506;
+    letter-spacing: 1px;
+    font-family: 'Asap-Regular' , 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-left: -183px;
+    margin-top: 0px;
+}
+
+.header .main .name_video span.top_name_2 {
+    display: block;
+    font-size: 63px;
+    color: #f5c506;
+    letter-spacing: 1px;
+    font-family: 'Asap-Regular' , 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 131px;
+    margin-top: -79px;
+}
+
+.header .main .name_video span.bottom_name {
+    display: block;
+    font-size: 63px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: 'Asap-Regular' , 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-left: -263px;
+    margin-top: -4px;
+}
+
+.header .main .name_video span.bottom_name_2 {
+    display: block;
+    font-size: 63px;
+    color: #ffffff;
+    letter-spacing: 0.9px;
+    font-family: 'Asap-Regular' , 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 145px;
+    margin-top: -79px;
+}
+
+/* делаем  блок с контентом, верхняя часть */
+.content_nav {
+    width: 100%;
+    height: 212px;
+    background-image: url(../assets/img/banner1.jpg);
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.3);
+}
+
+.content_nav td {
+    border: none;
+}
+
+.Layer1 {
+    display: none;
+}
+
+.Layer2 {
+    display: none;  
+}
+
+.content_nav article {
+    width: 1024px;        
+}
+
+.content_nav td {
+    border: 1px solid rgba(212, 212, 212, .83);
+}
+
+.content_nav .better_design  {
+    width: 340px;
+    height: 212px;
+}
+
+.content_nav .customise  {
+    width: 338px;
+    height: 212px;
+}
+
+.content_nav .its_free  {
+    width: 340px;
+    height: 212px;
+}
+
+/* выравниваем контент верхней части */
+.content_nav td.better_design a img {
+    padding-bottom: 12px;
+    padding-left: 112px;
+}
+
+.content_nav td.customise a img {
+    padding-bottom: 39px;
+    padding-left: 134px;
+}
+
+.content_nav td.its_free a img {
+    padding-bottom: 18px;
+    padding-left: 118px;
+}
+
+.content_nav span { 
+    font-size: 27px;
+    color: #000000;
+    font-family: "SegoeUI-Light", "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    font-weight: 300;
+   }
+
+.content_nav td.better_design a span {
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-top: 84px;
+    margin-left: -135px;;
+}
+
+.content_nav td.customise a span {
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-top: 109px;
+    margin-left: -116px;
+}
+
+
+.content_nav td.its_free a span {
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-top: 92px;
+    margin-left: -87px; 
+}
+
+/* делаем  блок с контентом, средняя часть часть */
+
+.content_info .letter {
+    display: none;
+    width: 317px;
+    height: 233px;
+    background-color: #f5c507;
+    margin-top: 0px;
+    margin-left: -0px;
+}
+
+.content_info {
+    width: 100%;
+    height: 509px;
+    background-image: url(assets/img/banner2.jpg);
+    background-size: cover;
+    box-shadow: 0.105px 2.998px 5px rgba(0,0,0,0.3) inset; 
+}
+
+.content_info .size {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+.info_h2 {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+}
+
+ .size span {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+}
+
+.content_info div h2 {
+    width: 700px;
+    height: 28px;
+    color: #ffffff;
+    font-size: 37px;
+    font-weight: 400;
+    letter-spacing: 0.09px;
+    word-spacing: 2px;
+    font-family: 'PTSans-Regular', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    padding-left: 2px;
+}
+
+/* вставляем первый блок с контентом */
+.content_info .block {
+    display: flex;
+    justify-content: flex-start;
+    width: 341px;
+    height: 233px;
+    background-color: #ec9e03;
+    margin-top: 20px;
+    margin-left: 1px;
+}
+
+.content_info span.text_block {
+    display: block;
+    width: 272px;
+    height: 174px;
+    color: #ffffff;
+    font-size: 21pt;
+    font-weight: 100;
+    letter-spacing: 0.73px;
+    line-height: 38px;
+    word-spacing: -1px;
+    font-family: 'SegoeWP-Light', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    padding-top: 16px;
+    padding-left: 30px;
+}
+
+.content_info span.text_block_2 {
+    display: none;
+}
+
+.content_info .block .plus_1 {
+    padding-top: 206px;
+    padding-left: 13px;
+}
+
+/* вставляем второе видео */
+.content_info .video_block_2 {
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.content_info .video_block_2 video {
+    position: absolute;
+    margin-left: -315px;
+    width: 315px;
+    height: 232px;
+}
+
+/* вставляем блок с твитером */
+.content_info .twitter_block {
+    position: relative;
+    display: flex;
+    width: 329px;
+    height: 233px;
+    background-color: #ec9e03;
+    margin-top: 20px;
+    margin-left: 34px;
+}
+
+.content_info .twitter_block .twitter {
+    width: 163px;
+    height: 133px;
+    padding-left: 83px;
+    padding-top: 58px;
+}
+
+.content_info .twitter_block .plus_2 {
+    width: 12px;
+    height: 12px;
+    display: block;
+    padding-top: 206px;
+    padding-left: 62px;
+}
+
+.content_info .twitter_block span {
+    position: absolute;
+    font-family: 'SegoeWP-Light', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: -19px;
+    padding-left: 285px;
+}
+
+/*  вставляем дату */
+.content_info .date {
+    position: relative;
+    width: 113px;
+    height: 86px;
+    background-color: #ddb101;
+    margin-top: -4px;
+    margin-left: 1px;
+}
+
+.content_info .date .date_25 {
+    display: block;
+    position: absolute;
+    font-size: 51px;
+    color: #ffffff;
+    font-family: 'SegoeUI', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    font-weight: normal;
+    padding-top: 2px;
+    padding-left: 27px;
+}
+
+.content_info .date .date_april {
+    display: block;
+    position: absolute;
+    font-size: 21px;
+    color: #b26529;
+    font-family: 'SegoeUI', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    padding-top: 58px;
+    padding-left: 32px;
+    letter-spacing: -1px;
+}
+
+/* делаем слайдер */
+.slider {
+  -webkit-appearance: none;
+  width: 896px;
+  height: 15px;
+  background: #ffffff;
+  outline: none;
+  opacity: 0.5;
+  border-radius: 7px;
+  margin-top: 126px;
+  margin-left: -39px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 197px;
+  height: 15px;
+  border-radius: 7px;
+  background: #ec9e03;;
+  cursor: pointer;
+}
+
+/* вставляем блок с рекламой */
+.content_advertising {
+
+    width: 100%;
+    height: 496px;
+    background-image: url(assets/img/banner3.jpg);
+    background-position: 100px;
+    background-size: cover; 
+}
+
+.content_advertising .size_advertising {
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;    
+    width: 1024px;
+    margin: 0 auto;        
+}
+
+.content_advertising .size_advertising h2 {
+    width: 100%;
+    height: 32px;
+    padding-top: 35px;
+    padding-left: 213px;
+    margin-bottom: 54px; 
+    font-size: 43px;
+    font-family: 'PTSans-Regular', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;    
+    font-weight: normal;
+    color: #f5c506;
+    letter-spacing: 0.1px;
+    word-spacing: 2px;
+}
+
+/* вставляем кртинку компьютера, мобильника и планшета */
+.content_advertising .size_advertising .desktop {
+    width: 323px;
+    height: 255px;
+    display: block;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.content_advertising .size_advertising .tablet {
+    width: 129px;
+    height: 173px;
+    display: block;
+    padding-left: 24px;
+    margin-top: 57px;
+}
+
+.content_advertising .size_advertising .mobile {
+    width: 39px;
+    height: 63px;
+    padding-left: 25px;
+    margin-top: 167px;
+}
+
+/* вставляем список */
+.content_advertising .size_advertising .list span {
+    display: block;
+    font-size: 22px;
+    font-family: 'SegoeWP-Light', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;    
+    font-weight: normal;
+    color: #a9a9a7;
+    letter-spacing: 1.3px;
+    word-spacing: -0px;
+    padding-left: 21px;
+    margin-top: -6px;
+    line-height: 25px;
+}
+
+.content_advertising .size_advertising .list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 14px 370px;
+    grid-template-rows: 50px 66px 51px 49px;
+    padding-left: 79px;
+    margin-top: 65px;
+}
+
+/* вставдяем желтый кружок */
+.round {
+  position: absolute; 
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  background: #f5c506;
+  line-height: 120px; 
+  text-align: center;
+  margin-top: 93px;
+}
+
+.round span {
+    font-size: 19px;
+    color: #ffffff;
+    font-family: 'PTSans-NarrowBold', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana; 
+    font-weight: 700;
+    padding-left: 1px;
+}
+
+/* делаем футер */
+.footer {
+    width: 100%;
+    height: 64px;
+    background-color: #4c4c4c;
+    background-size: cover; 
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+}
+
+.logo_footer {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.logo_footer .logo_footer_1 {
+    display: block;
+    position: absolute;
+    padding-left: 1px;
+    padding-top: 5px;
+}
+
+.logo_footer .logo_footer_2 {
+    display: block;
+    position: absolute;
+    padding-left: 3px;
+    padding-top: 7px;
+}
+
+.logo_footer h3 {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding-left: 62px;
+    padding-top: 17px;
+    letter-spacing: 0.3px;;
+}
+
+  .button-rise{
+    position: fixed;
+    right: 125px;
+    top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 80px;
+    z-index: 100;
+   }
+
+   .button_mobile {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(141, 140, 140, 0.514);
+    color: #000000;
+    border: 1px solid rgba(201, 201, 201, 0.801);
+    outline: none;
+    cursor: pointer;
+   }
+
+   .button_mobile:hover {
+       color: azure;
+       border: 1px solid azure;
+   }
+
+   .button_back-desktop {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(141, 140, 140, 0.514);
+    color: #000000;
+    border: 1px solid rgba(201, 201, 201, 0.801);
+    outline: none;
+    cursor: pointer;
+   }
+
+    .button_back-desktop:hover {
+       color: azure;
+       border: 1px solid azure;
+   }
+ 
+
+@media only screen and (max-width : 640px) {
+
+    /* делаем верхнюю часть сайта */
+.header {
+    width: 640px;
+    height: 389px;
+} 
+
+.header header {
+    width: 640px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* позиционируем логотип */
+.logo {
+    position: relative;
+    width: 186px;
+    height: 62px;
+    background-image: url(../theyalow/assets/img/logo_fone_mobile\ .png);
+}
+
+.logo .logo_1 {
+    padding-top: 12px;
+    padding-left:13px;
+    width: 38px;
+    height: 37px;
+}
+
+.logo .logo_2 {
+    position: absolute;
+    padding-top: 11px;
+    padding-left: 13px;
+    width: 40px;
+    height: 39px;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding-left: 7px;
+    padding-top: 22px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+}
+
+/* позиционируем панель навигации */
+.nav {
+    width: 454px;
+    height: 62px;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.header table {
+    width: 454px;
+    height: 62px;
+    background-image: url(../assets/img/mobile_back_nav.png);                       
+}
+ .header a { 
+    text-decoration: none;
+    color: #b99403; 
+   }
+.header a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 62px
+}
+
+.about_us {
+    width: 172px;
+    height: 62px;
+}
+
+.services {
+     width: 132px;
+     height: 62px;
+}
+
+.contact {
+    width: 150px;
+    height: 62px;
+}
+
+.nav span { 
+     font-size: 17px;
+    color: #9b7d08;
+    font-family: "Segoe WP", "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+   }
+
+.nav td.about_us span {
+    position: absolute;
+    letter-spacing: 1.45px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 58px;
+    padding-top: 20px;
+}
+
+.nav td.services span {
+    position: absolute;
+    letter-spacing: 1.45px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 37.5px;
+    padding-top: 20px;
+}
+
+.nav td.contact span {
+    position: absolute;
+    letter-spacing: 1.45px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 52px;
+    padding-top: 20px;
+}
+
+.nav td {
+    position: relative;
+}
+
+.nav td.about_us img {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 22px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 23px;
+    padding-top: 20px;
+}
+
+.nav td.services img {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 7px;
+    padding-top: 21px;
+}
+
+.nav td.contact img {
+    position: absolute;
+    width: 29px;
+    height: 21px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 12px;
+    padding-top: 20px;
+}
+
+/* вставляем видео */
+.header .main  {
+    display: block;
+    width: 640px;
+    height: 327px;
+} 
+
+.header .main div {
+    position: relative;
+    width: 640px;
+    height: 327px;
+    background-image: url(../theyalow/assets/img/mobile_back_video.png);
+    z-index: 2;
+}
+
+.header .main div .preview {
+    display: none;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.video_poster video {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 640px;
+    height: 327px;
+}
+
+/* убираем кнопки слайдера */
+.header div.controls {
+    display: none;
+}
+
+.header  a.left {
+    display: none;  
+}
+
+.header a.left img {
+     display: none; 
+}
+
+.header  a.right {
+    display: none; 
+} 
+/* убираем название к видео */
+.header .main .name_video {
+    display: none;
+}
+
+.header .main .name_video span.top_name {
+    display: none;
+}
+
+.header .main .name_video span.top_name_2 {
+    display: none;
+}
+
+.header .main .name_video span.bottom_name {
+    display: none;
+}
+
+.header .main .name_video span.bottom_name_2 {
+    display: none;
+}
+
+/* делаем  блок с контентом, верхняя часть */
+.content_nav {
+    width: 640px;
+    height: 174px;
+    box-shadow: none;
+    background-image: none;
+}
+
+.content_nav table{
+    display: block;
+    width: 640px;
+    z-index: 5;
+}
+
+.content_nav td {
+    border: none;
+}
+
+.Layer1 {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    margin-top: -4px;
+    opacity: 0.7;
+}
+
+.Layer2 {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    margin-top: -9px;
+    opacity: 0.7;  
+}
+
+.content_nav .better_design  {
+    width: 213px;
+    height: 174px;
+}
+
+.content_nav .customise  {
+    width: 214px;
+    height: 174px;
+}
+
+.content_nav .its_free  {
+    width: 213px;
+    height: 174px;
+}
+
+/* выравниваем контент верхней части */
+.content_nav a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 174px;
+}
+
+.content_nav td.better_design a img {
+    position: absolute;
+    width: 89px;
+    height: 61px;
+    padding-top: 33px;
+    padding-left: 45px;
+}
+
+.content_nav td.customise a img {
+    position: absolute;
+    width: 67px;
+    height: 69px;
+    padding-top: 29px;
+    padding-left: 82px;
+}
+
+.content_nav td.its_free a img {
+    position: absolute;
+    width: 68px;
+    height: 69px;
+    padding-top: 28px;
+    padding-left: 69px;
+}
+
+.content_nav span { 
+    font-size: 23px;
+    color: #000000;
+    font-family: "SegoeUI-Light", "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    font-weight: 300;
+   }
+
+.content_nav td.better_design a span {
+    display: block;
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-top:111px;
+    margin-left: 16px;
+}
+
+.content_nav td.customise a span {
+    display: block;
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-top: 111px;
+    margin-left: 57px;
+}
+
+.content_nav td.its_free a span {
+    display: block;
+    position: absolute;
+    letter-spacing: 0.3px;
+    margin-top: 111px;
+    margin-left: 68px; 
+}
+
+/* делаем  блок с контентом, средняя часть */
+.content_info {
+    width: 640px;
+    height: 480px;
+    background-image: none;
+    box-shadow: none; 
+}
+
+ .size span {
+    display: none;  
+}
+
+.info_h2 {
+    display: none;
+}
+
+.content_info .size {
+    width: 640px;
+    height: 485px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;        
+}
+
+.content_info .size .info_h2 {
+    display: none;
+    width: 0;
+    height: 1px;
+}
+
+.content_info div h2 {
+    display: none;
+}
+
+/* вставляем первый блок с контентом */
+.content_info .block {
+    display: flex;
+    justify-content: flex-start;
+    width: 299px;
+    height: 232px;
+    background-color: #ec9e03;
+    margin-top: 7px;
+    margin-left: 9px;
+}
+
+.content_info .block .text_block {
+    width: 235px;
+    height: 189px;
+    padding-top: 12px;
+    padding-left: 25px;
+}
+
+
+.content_info span.text_block {
+    display: none;
+}
+
+.content_info span.text_block_2 {
+    display: block;
+    width: 235px;
+    height: 189px;
+    color: #ffffff;
+    font-size: 21pt;
+    font-weight: 100;
+    letter-spacing: 0.7px;
+    word-spacing: 0px;
+    font-family: 'SegoeWP-Light', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    padding-top: 16px;
+    padding-left: 25px;
+    line-height: 33px;
+}
+
+.content_info .block .plus_1 {
+    width: 10px;
+    height: 10px;
+    padding-top: 200px;
+    padding-left: 15px;
+}
+
+/* вставляем второе видео */
+.content_info .video_block_2 {
+    position: relative;
+    margin-top: 6px;
+    margin-left: 9px;
+
+}
+
+.content_info .video_block_2 video {
+    position: absolute;
+    margin-left: -315px;
+    width: 315px;
+    height: 232px;
+}
+
+/* вставляем блок с твитером */
+.content_info .twitter_block {
+    position: relative;
+    display: flex;
+    width: 324px;
+    height: 233px;
+    background-color: #f5c507;
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.content_info .twitter_block .twitter {
+    width: 159px;
+    height: 133px;
+    padding-left: 83px;
+    padding-top: 59px;
+}
+
+.content_info .twitter_block .plus_2 {
+    display: none;
+}
+
+.content_info .twitter_block span {
+    display: none;
+}
+
+/*  вставляем чат твитера */
+.content_info .letter {
+    display: block;
+    width: 317px;
+    height: 233px;
+    background-color: #f5c507;
+    margin-top: 2px;
+    margin-left: -1px;
+}
+
+.letter_1 {
+    position: relative;
+    width: 284px;
+    height: 56px;
+    margin-top: 24px;
+    margin-left: 1px;
+}
+
+.letter_2 {
+    position: relative;
+    width: 284px;
+    height: 56px;
+    opacity: 0.8;
+    margin-left: 1px;
+}
+
+.letter_3 {
+    position: relative;
+    width: 284px;
+    height: 56px;
+    opacity: 0.7;
+    margin-left: 1px;
+}
+
+.letter .letter_1 span {
+    display: block;
+    position: absolute;
+    width: 217px;
+    height: 28px;
+    font-family: 'Arial', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    letter-spacing: 0.103px;
+    font-size: 13px;
+    margin-top: -39px;
+    margin-left: 28px;
+    opacity: 0.5;
+
+}
+
+.letter .letter_2 span {
+    display: block;
+    position: absolute;
+    width: 217px;
+    height: 28px;
+    font-family: 'Arial', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    letter-spacing: 0.103px;
+    font-size: 13px;
+    margin-top: -39px;
+    margin-left: 28px;
+    opacity: 0.7;
+}
+
+.letter .letter_3 span {
+    display: block;
+    position: absolute;
+    width: 217px;
+    height: 28px;
+    font-family: 'Arial', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    letter-spacing: 0.103px;
+    font-size: 13px;
+    margin-top: -39px;
+    margin-left: 28px;
+    opacity: 0.7;
+}
+
+.slider {
+  display: none;
+}
+
+/* делаем отправку формы */
+.input_text {
+    height: 29px; 
+    width: 201px;
+    background: #ffffff;
+    border: 1px solid rgba(8, 8, 8, 0.2);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 14px;
+    outline: none;
+}
+
+.input_submit {
+    height: 31px; 
+    width: 69px;
+    background: #ec9e03;
+    border: none;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    margin-left: -6px;
+    font-family: 'Arial', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* убираем дату */
+.content_info .date {
+    display: none;
+}
+
+.content_info .date .date_25 {
+    display: none;
+}
+
+.content_info .date .date_april {
+    display: none;
+}
+
+.content_info .input {
+    display: none;
+}
+
+/* вставляем блок с рекламой */
+.content_advertising {
+
+    width: 640px;
+    height: 467px;
+    background-image: none;
+    background-color: #474747;
+    background-position: 100px;
+    background-size: cover; 
+}
+
+.content_advertising .size_advertising {
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;    
+    width: 1024px;
+    margin: 0 auto;        
+}
+
+.content_advertising .size_advertising h2 {
+    width: 100%;
+    height: 32px;
+    padding-top: 32px;
+    padding-left: 19px;
+    margin-bottom: 78px; 
+    font-size: 39px;
+    font-family: 'PTSans-Regular', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana;    
+    font-weight: normal;
+    color: #f5c506;
+    letter-spacing: 1.9px;
+}
+
+/* вставляем кртинку компьютера, мобильника и планшета */
+.content_advertising .size_advertising .desktop {
+    width: 323px;
+    height: 255px;
+    display: block;
+    padding-top: 15px;
+    padding-left: 57px;
+}
+
+.content_advertising .size_advertising .tablet {
+    width: 129px;
+    height: 173px;
+    display: block;
+    padding-left: 24px;
+    margin-top: 57px;
+}
+
+.content_advertising .size_advertising .mobile {
+    width: 39px;
+    height: 63px;
+    padding-left: 25px;
+    margin-top: 167px;
+}
+
+/* убираем список */
+.content_advertising .size_advertising .list span {
+    display: none;
+}
+
+.content_advertising .size_advertising .list {
+    display: none;
+}
+
+/* вставдяем желтый кружок */
+.round {
+  position: absolute; 
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  background: #f5c506;
+  line-height: 120px; 
+  text-align: center;
+  margin-top: 116px;
+  margin-left: 27px;
+}
+
+.round span {
+    font-size: 19px;
+    color: #ffffff;
+    font-family: 'PTSans-NarrowBold', "AdobeInvisFont", "MyriadPro-Regular", Geneva, Verdana; 
+    font-weight: 700;
+    padding-left: 1px;
+}
+
+/* делаем футер */
+.footer {
+    width: 640px;
+    height: 43px;
+    background-color: #4c4c4c;
+    box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+}
+
+.logo_footer {
+    position: relative;
+    width: 640px;
+}
+
+.logo_footer .logo_footer_1 {
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+    padding-left: 65px;
+    padding-top: 5px;
+}
+
+.logo_footer .logo_footer_2 {
+    width: 29px;
+    height: 29px;
+    display: block;
+    position: absolute;
+    padding-left: 66px;
+    padding-top: 7px;
+}
+
+.logo_footer h3 {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    padding-left: 104px;
+    padding-top: 12px;
+    letter-spacing: 0.1px;
+}
+
+}

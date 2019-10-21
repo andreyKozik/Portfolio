@@ -1,0 +1,776 @@
+@font-face { 
+  font-family: 'Trocchi'; 
+  src: url('fonts/Trocchi/Trocchi-Regular.ttf')  format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Leckerli One'; 
+  src: url('fonts/Leckerli_One/LeckerliOne-Regular.ttf')  format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: 'Aldrich'; 
+  src: url('fonts/Aldrich/Aldrich-Regular.ttf')  format('truetype');  
+  font-weight: normal; 
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+    font-family: 'Trocchi', Arial, serif;
+    background-color: rgba(80, 78, 78, 0.671);
+    z-index: 5;
+}
+
+.background {
+    margin: 0 auto;
+    max-width: 780px;
+    background-image: url(../portfolio/img/background.jpg);
+    background-size: cover;
+    z-index: 5;
+}
+/* шапка сайта */
+header {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0px auto 0 auto;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.header img {
+    width: 150px;
+    margin: 0px auto 30px auto;
+    display: block;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 7px;
+}
+
+.header h1, h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 15px auto;
+}
+
+.header h3 {
+    font-family: 'Leckerli One', Arial, cursive;
+}
+
+.header h1 {
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Aldrich', Arial, sans-serif;
+}
+
+/* основное содержание страницы */
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, .6);
+}
+
+main div {
+    display: block;
+    width: 45%;
+    background-size: cover;
+    margin-bottom: 0px;
+}
+
+ h4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Aldrich', sans-serif;
+}
+
+.skills span {
+    display: flex;
+    justify-content: flex-end;
+
+    background-image: url(../portfolio/img/Rectangle\ 1.png);
+    background-size: cover;
+    padding: 15px
+}
+
+.skills span a:hover {
+    display: block;
+    position: relative;
+    bottom: 4px;
+}
+
+.experience h4{
+    margin-top: 15px;
+}
+
+.education li {
+    list-style-type: none;
+}
+
+.education_name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Aldrich', sans-serif;
+    background-color: rgba(255, 255, 255, 0.404);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.education-list {
+    display: none;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.11);
+    transition-duration: 0.5s;
+}
+
+.education-list_add {
+    display: block;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.11);
+    transition-duration: 0.5s;
+}
+
+.education ul li:hover > ul{
+   display: block;
+   background-color: rgba(255, 255, 255, 0.11);
+   cursor: pointer;
+   border-radius: 5px; 
+}
+
+.education-list li:hover {
+     background-color:black;
+     color: floralwhite;
+} 
+
+.education-list li {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.021);
+}
+
+/* слайдер с проектами */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    border: 2px solid rgba(255, 255, 255, 0.541);
+    margin-top: 40px;
+}
+
+.item {
+    display: none;
+    width: 500px;
+    height: 260px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.541);
+    animation: 0.5s ease-in-out;
+}
+
+
+.slider_main-description {
+    width: 250px;
+    height: 260px;
+}
+
+.slider_main-description h3 {
+    margin-top: 10px;
+    width: 250px
+}
+
+.slider_main-description ul {
+    margin-left: 40px;
+}
+
+.slider_main-description ul li {
+    margin-top: 10px;
+}
+
+.slider_main-description_click {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 200px;
+    height: 50px;
+}
+
+.slider_main-description_click div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider_main-description_click div img {
+    width: 50px;
+    height: 50px;
+}
+
+.photo_project375 {
+    display: none;
+}
+
+.photo_project {
+    display: block;
+}
+
+.slider_main-img {
+    width: 250px;
+    height: 260px;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+    height: 300px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 50px; 
+}
+
+
+/* прикручиваем слайдер */
+
+.slider-description {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 55px; 
+}
+
+.items-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.active,
+.next {
+  display: flex;
+}
+
+.next {
+  position: absolute;
+  top: -800px;
+  width: 100%;
+  z-index: 0;
+}
+
+.description {
+  margin: 30px 20%;
+  font-size: 32px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-name {
+  padding: 10px;
+}
+
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+/* footer сайта(соцсети) */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer div {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+footer a img {
+    width: 20px;
+    background-color: azure;
+    border: 1px solid white;
+    border-radius: 4px;
+} 
+
+footer a img:hover {
+    display:block;
+    position: relative;
+    width: 25px;
+    bottom: 10px; 
+}
+
+ a {
+    color: #b98b37c7; 
+   }
+   a:visited {
+    color: #b98b37c7; 
+   }
+   a:active {
+    color: #b98c37a4; 
+   }
+
+   .skills span a {
+    color:  #cfcdcd;
+   }
+   .skills span a:visited {
+    color: #cfcdcd;
+   }
+   .skills span a:active {
+    color: #cfcdcd;
+   }
+
+/* кнопки для переключения мобильной и полной версии. */
+   .button {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 80px;
+   }
+
+   .button_mobile {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(141, 140, 140, 0.514);
+    color: #cfcdcd;
+    border: 1px solid rgba(201, 201, 201, 0.801);
+    outline: none;
+    cursor: pointer;
+   }
+
+   .button_mobile:hover {
+       color: azure;
+       border: 1px solid azure;
+   }
+
+   .button_back-desktop {
+    width: 100px;
+    height: 30px;
+    background-color: rgba(141, 140, 140, 0.514);
+    color: #cfcdcd;
+    border: 1px solid rgba(201, 201, 201, 0.801);
+    outline: none;
+    cursor: pointer;
+   }
+
+    .button_back-desktop:hover {
+       color: azure;
+       border: 1px solid azure;
+   }
+
+   @media only screen and (max-width : 615px) {
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 450px;
+            height: 270px;
+            border: 2px solid rgba(255, 255, 255, 0.541);
+            margin-top: 40px;
+        }
+
+        .slider_theyalow {
+            display: flex;
+            width: 500px;
+            height: 260px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.541);
+        }
+
+        .slider_repair-design-project {
+            display: none;
+            width: 500px;
+            height: 260px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.541);
+        }
+
+        .slider_main-description {
+            width: 250px;
+            height: 260px;
+        }
+
+        .slider_main-description h3 {
+            margin-top: 10px;
+            width: 250px
+        }
+
+        .slider_main-description_click {
+            display: flex;
+            margin-top: 30px;
+            margin-left: 15px;
+            width: 200px;
+            height: 50px;
+        }
+
+        .slider_main-description_click div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider_main-description_click div img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .slider_main-img {
+            width: 250px;
+            height: 260px;
+        }
+
+
+        .slider_button-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50px;
+            height: 300px;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+
+        .slider_button-left_arrow {
+            font-size: 50px; 
+        }
+
+        .slider_button-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 50px;
+            height: 300px;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+
+        .slider_button-right_arrow {
+            font-size: 50px; 
+        }
+
+        .slider-description {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            width: 290px;
+            height: 55px; 
+        }
+    }
+
+   @media only screen and (max-width : 480px) {
+        .carousel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 400px;
+            border: 2px solid rgba(255, 255, 255, 0.541);
+            margin-top: 40px;
+        }
+
+        .slider-description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            width: 290px;
+            height: 55px; 
+        }
+     
+        .circle {
+           width: 25px;
+           height: 25px;
+           border: 1px solid rgba(255, 255, 255, 0.541);
+           border-radius: 50%;
+           margin-left: 60px;
+        }
+
+        .item {
+            display: none;
+            width: 290px;
+            height: 290px;
+            overflow: hidden;
+            border: none;
+        }
+
+        .active,
+        .next {
+            display: flex;
+        }
+
+        .next {
+            position: absolute;
+            top: -800px;
+            width: 100%;
+            z-index: 0;
+        }
+
+        .slider_main-description {
+            position: absolute;
+            background-color: rgb(110, 110, 110);
+            display: none;  
+            flex-direction: column;
+            width: 290px;
+            height: 290px;
+        }
+
+        .slider_main-description375 {
+            position: absolute;
+            background-color: rgb(110, 110, 110);
+            display: block;  
+            flex-direction: column;
+            width: 290px;
+            height: 290px;
+        }
+
+        .slider_main-description ul {
+            margin-left: 40px;
+        }
+
+        .slider_main-description ul li {
+            margin-top: 10px;
+        }
+
+        .slider_main-description h3 {
+            margin-top: 10px;
+            width: 250px
+        }
+
+        .slider_main-description_click {
+            display: none;
+            margin-top: 30px;
+            margin-left: 15px;
+            width: 200px;
+            height: 50px;
+        }
+
+        .slider_main-description_click div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider_main-description_click div img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .photo_project375 {
+            display: block;
+        }
+
+        .photo_project {
+            display: none;
+        }
+
+        .slider_main-img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .control {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            max-width: 50px;
+            height: 300px;
+            margin-bottom: 0px;
+            cursor: pointer;
+        }
+
+
+        header {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            margin: 0px auto 0 auto;
+            background-size: cover;
+            padding-top: 50px;
+        }
+
+        .header img {
+            width: 120px;
+            margin: 0px auto 30px auto;
+            display: block;
+            position: relative;
+            border: 2px solid white;
+            border-radius: 7px;
+        }
+
+        .header h1, h3 {
+            display: flex;
+            justify-content: center;
+            margin: 0px auto 15px auto;
+        }
+
+        .header h3 {
+            font-family: 'Leckerli One', Arial, cursive;
+            font-size: 15px;
+        }
+
+        .header h1 {
+            font-size: 25px;
+            color: rgba(255, 255, 255, .9);
+            font-family: 'Aldrich', Arial, sans-serif;
+        }
+
+        /* основное содержание страницы */
+        main {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: rgba(255, 255, 255, .6);
+        }
+
+        main div {
+            font-size: 11px;
+            display: block;
+            width: 45%;
+            background-size: cover;
+            margin-bottom: 0px;
+        }
+
+        h4 {
+            display: flex;
+            justify-content: center;
+            font-size: 13px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+            color: rgba(255, 255, 255, .9);
+            font-family: 'Aldrich', sans-serif;
+        }
+
+        .skills span {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 11px;
+            background-image: url(../portfolio/img/Rectangle\ 1.png);
+            background-size: cover;
+            padding: 15px;
+            height: 5px;
+        }
+
+        .skills span a:hover {
+            display: block;
+            position: relative;
+            bottom: 4px;
+        }
+
+        .experience h4{
+            margin-top: 13px;
+        }
+
+        .education li {
+            list-style-type: none;
+        }
+
+        .education_name {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0px;
+            margin-top: 15px;
+            color: rgba(255, 255, 255, .9);
+            font-family: 'Aldrich', sans-serif;
+            background-color: rgba(255, 255, 255, 0.404);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .education-list {
+            display: none;
+            text-decoration: none;
+            transition-duration: 0.5s;
+        }
+
+        .education ul li:hover > ul{
+        display: block;
+        background-color: rgba(255, 255, 255, 0.11);
+        cursor: pointer;
+        border-radius: 5px; 
+        }
+
+        .education-list li:hover {
+            background-color:black;
+            color: floralwhite;
+        } 
+
+        .education-list li {
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.021);
+        }
+
+        footer div {
+            width: 35%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+    }
+
+
+   
